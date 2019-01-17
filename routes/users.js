@@ -34,7 +34,7 @@ router.post('/register', (req, res) => {
   if (req.body.password != req.body.password2) {
     errors.push({
       text: 'Passwords do not match'
-    })
+    });
   }
 
   if (req.body.password.length < 4) {

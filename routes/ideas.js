@@ -72,7 +72,7 @@ router.post('/', ensureAuthentication, (req, res) => {
       title: req.body.title,
       details: req.body.details,
       user: req.user.id
-    };
+    }
     new Idea(newUser)
       .save()
       .then(idea => {

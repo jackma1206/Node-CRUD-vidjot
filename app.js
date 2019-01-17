@@ -17,7 +17,7 @@ const users = require('./routes/users');
 //Passport Config
 require('./config/passport')(passport);
 //DB config
-const db = require('./config/database')
+const db = require('./config/database');
 
 //map global promise - get rid of warning
 mongoose.Promise = global.Promise;
